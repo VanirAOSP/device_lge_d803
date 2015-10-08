@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2013 The Android Open-Source Project
+# Copyright (C) 2011 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,6 +23,6 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # NFC
 $(call inherit-product, device/lge/g2-common/nfc.mk)
 
-# NFC
+# Sensors
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
+    $(LOCAL_PATH)/configs/sensor_def_d803.conf:system/etc/sensor_def_variable.conf
